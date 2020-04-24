@@ -1,0 +1,38 @@
+{
+  "name": "project-aviv",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "set NODE_ENV=production && node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "prettier --write src/**/*.js"
+  },
+  "author": "Ilan.Roitlender",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "bluebird": "3.7.2",
+    "connect-mongo": "3.2.0",
+    "cookie-parser": "1.4.5",
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "express-mongo-sanitize": "2.0.0",
+    "express-rate-limit": "5.1.1",
+    "express-session": "1.17.1",
+    "helmet": "3.22.0",
+    "hpp": "0.2.3",
+    "jsonwebtoken": "8.5.1",
+    "lodash": "latest",
+    "lusca": "1.6.1",
+    "mongoose": "5.9.10",
+    "morgan": "1.10.0",
+    "validator": "13.0.0",
+    "log4js": "6.2.1"
+  },
+  "devDependencies": {
+    "dotenv": "8.2.0",
+    "prettier": "2.0.5"
+  }
+}

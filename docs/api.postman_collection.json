@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "43a7456c-48f4-4654-8d28-447108e7bc79",
+		"name": "project aviv",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "{{URL}}/auth/register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": "json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"test@ui.com\",\n\t\"password\": 123456,\n\t\"company\": \"google\"\n}"
+						},
+						"url": {
+							"raw": "{{URL}}/auth/register",
+							"host": [
+								"{{URL}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						},
+						"description": "route: POST /api/v1/auth/register\naccess: Public\ndesc: register user"
+					},
+					"response": []
+				}
+			],
+			"description": "authentication API",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "f258eade-6505-4222-97b8-49f62681df3e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "d761ab7f-1b92-4a7f-a585-5885df5b846e",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
