@@ -3,7 +3,7 @@ const fs = require('fs');
 
 const ENVIRONMENT = process.env.NODE_ENV;
 const isProd = ENVIRONMENT !== 'development'; // Anything else is treated as 'dev'
-const envPath = isProd? 'src/config/prod.config.env' : 'src/config/dev.config.env';
+const envPath = isProd ? 'src/config/prod.config.env' : 'src/config/dev.config.env';
 
 if (fs.existsSync(envPath)) {
   logger.debug('Using .env file to supply config environment variables');
@@ -51,5 +51,5 @@ module.exports = {
   jwtExpire,
   cookieExpire,
   jwtKey,
-  mailConfig
+  mailConfig,
 };
