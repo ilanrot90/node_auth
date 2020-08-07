@@ -3,3 +3,4 @@ node_modules
 debug.log
 .idea
 /src/config/prod.config.env
+!/.gitlab-ci.yml
