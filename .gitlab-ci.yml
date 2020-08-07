@@ -1,0 +1,26 @@
+image: node:latest
+
+before_script:
+  - echo "Job started."
+
+after_script:
+  - echo "Job ended."
+
+stages:
+  - testing
+  - staging
+
+testing:
+  stage: testing
+  script: npm run test
+  only:
+    - master
+
+staging:
+  stage: staging
+  script:
+    - cd docs
+    - ./docgen build -i api.postman_collection.json -o index.html
+  only:
+    - staging
+    - master

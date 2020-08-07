@@ -1,0 +1,5 @@
+# Created by .ignore support plugin (hsz.mobi)
+node_modules
+debug.log
+.idea
+/src/config/prod.config.env
