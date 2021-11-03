@@ -28,7 +28,7 @@
     "lusca": "1.6.1",
     "mongoose": "5.9.10",
     "morgan": "1.10.0",
-    "validator": "13.0.0",
+    "validator": "13.7.0",
     "log4js": "6.2.1"
   },
   "devDependencies": {
